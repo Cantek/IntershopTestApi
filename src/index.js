@@ -6,14 +6,15 @@ window.func = function getCategory(catName) {
   resultElement.innerHTML = "";
   let that = this;
   //var categoryName =
-  /*const catUrl =
+  const catUrl =
     "https://intershoppwa.azurewebsites.net/INTERSHOP/rest/WFS/inSPIRED-inTRONICS-Site/-;loc=en_US;cur=USD/categories/" +
     catName;
-*/
+
+  /*
   const catUrl =
     "https://www.penti.com/INTERSHOP/rest/WFS/Penti-PentiChannel-Site/-;loc=tr_TR;cur=TRY/categories/" +
     catName;
-
+*/
   axios
     .get(catUrl)
     .then(
@@ -26,7 +27,7 @@ window.func = function getCategory(catName) {
             resultElement.innerHTML +=
               "<table style='float:left;text-align:center;'><tr><td><a href='#' onClick='window.func(\"" +
               category.id +
-              "\")'><img src = https://intershoppwa.azurewebsites.net" +
+              "\")'><img width='100px;' height='100px;' src='https://intershoppwa.azurewebsites.net" +
               +"/></a></td></tr><tr><td>" +
               category.name +
               "</td></tr></table>";
@@ -42,9 +43,9 @@ window.func = function getCategory(catName) {
               catName +
               "/" +
               category.id +
-              "\")'><img src = https://intershoppwa.azurewebsites.net" +
+              "\")'><img src = 'https://intershoppwa.azurewebsites.net" +
               category.images[0].effectiveUrl +
-              "/></a></td></tr><tr><td>" +
+              "'/></a></td></tr><tr><td>" +
               category.name +
               "</td></tr></table>";
           });
