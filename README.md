@@ -1,2 +1,0 @@
-# IntershopTestApi
-Created with CodeSandbox
