@@ -27,8 +27,7 @@ window.func = function getCategory(catName) {
             resultElement.innerHTML +=
               "<table style='float:left;text-align:center;'><tr><td><a href='#' onClick='window.func(\"" +
               category.id +
-              "\")'><img width='100px;' height='100px;' src='https://intershoppwa.azurewebsites.net" +
-              +"/></a></td></tr><tr><td>" +
+              "\")'><img width='100px;' height='100px;' src='https://intershoppwa.azurewebsites.net'/></a></td></tr><tr><td>" +
               category.name +
               "</td></tr></table>";
           });
