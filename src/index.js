@@ -43,7 +43,7 @@ window.func = function getCategory(catName) {
               catName +
               "/" +
               category.id +
-              "\")'><img src = 'https://intershoppwa.azurewebsites.net" +
+              "\")'><img src='https://intershoppwa.azurewebsites.net" +
               category.images[0].effectiveUrl +
               "'/></a></td></tr><tr><td>" +
               category.name +
